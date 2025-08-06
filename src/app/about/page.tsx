@@ -15,7 +15,7 @@ export default function AboutPage() {
                         There’s not enough poetry nights in deptford, ‘til now.
 
                     </p>
-                    <p className="text-red-600 text-lg">
+                    <p className="text-red-600 text-lg font-pirata">
                         woof
                     </p>
 
