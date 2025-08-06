@@ -4,23 +4,20 @@ export default function Home() {
   return (
     <div>
 
-      <main className="py-4 px-6 sm:px-12 flex flex-col gap-12 row-start-2 items-center">
+      <main className="flex flex-col gap-12 row-start-2 items-center">
         {/* Hero Section */}
-        <div className="relative w-full max-w-5xl font-pirata">
+        <section className="relative h-screen w-full">
           <Image
             src="/DeptfordArches.jpg"
             alt="Deptford Arches"
-            width={1200}
-            height={800}
-            className="w-full h-auto object-cover rounded-md"
+            fill
             priority
+            className="!absolute object-cover object-center z-0"
           />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <h2 className="text-white text-4xl sm:text-6xl font-bold drop-shadow-lg text-center">
-              Deptford Doggerels
-            </h2>
+          <div className="absolute inset-0  bg-opacity-30 z-10 flex items-center justify-center text-white">
+            <h1 className="text-4xl md:text-6xl font-pirata">Deptford Doggerels</h1>
           </div>
-        </div>
+        </section>
 
         {/* Event Info */}
         <section className="text-center max-w-xl">

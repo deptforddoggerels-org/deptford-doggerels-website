@@ -11,88 +11,88 @@ export default function Navbar() {
     const isActive = (path: string) => pathname === path;
 
     return (
-        <nav className="font-pirata p-4 border-b flex items-center justify-between px-6 md:px-12 bg-white text-lg">
-            {/* Logo */}
-            <Link href="/" className="flex items-center gap-2">
-                <Image
-                    src="/DoggerelsIconBW.webp"
-                    alt="Site Icon"
-                    width={40}
-                    height={40}
-                    className="rounded-full object-cover"
-                />
-                <span>Deptford Doggerels</span>
-            </Link>
+        <div className="relative">
+            {/* Gradient background behind the navbar */}
+            <div
+                className="fixed top-0 left-0 w-full h-20 bg-gradient-to-b from-black/70 to-transparent pointer-events-none z-40"
+                aria-hidden="true"
+            />
 
-            {/* Nav Links */}
-            <ul className="hidden md:flex gap-8 items-center relative">
-                <li>
-                    <Link
-                        href="/gallery"
-                        className={isActive('/gallery') ? 'underline' : 'hover:underline'}
-                    >
-                        Gallery
-                    </Link>
-                </li>
+            {/* Actual navbar */}
+            <nav className="fixed top-0 left-0 w-full z-50 font-pirata p-4 flex items-center justify-between px-6 md:px-12 bg-transparent text-white">
 
-                {/* Zines Dropdown */}
-                <li className="relative group">
-                    <div
-                        className="inline-flex items-center gap-1 hover:underline focus:outline-none"
-                    >
+
+
+                {/* Logo */}
+                <Link href="/" className="flex items-center gap-2">
+                    <Image
+                        src="/DoggerelsIconBW.webp"
+                        alt="Site Icon"
+                        width={40}
+                        height={40}
+                        className="rounded-full object-cover"
+                    />
+                    <span>Deptford Doggerels</span>
+                </Link>
+
+                {/* Nav Links */}
+                <ul className="hidden md:flex gap-8 items-center relative">
+                    <li>
                         <Link
-                            href="/zines"
-                            className={pathname.startsWith('/zines') ? 'underline' : 'hover:underline'}
+                            href="/gallery"
+                            className={isActive('/gallery') ? 'underline' : 'hover:underline'}
                         >
-                            Zines
+                            Gallery
                         </Link>
-                        <FaChevronDown className="w-3 h-3 mt-[1px]" />
-                    </div>
+                    </li>
 
-                    <ul
-                        className="absolute left-0 top-full hidden group-hover:flex flex-col bg-white border shadow-md z-50 p-2 rounded-md min-w-[120px] transition-all duration-200 ease-in-out opacity-0 group-hover:opacity-100 group-hover:translate-y-1"
-                    >
-                        <li>
+                    {/* Zines Dropdown */}
+                    <li className="relative group">
+                        <div
+                            className="inline-flex items-center gap-1 hover:underline focus:outline-none"
+                        >
                             <Link
-                                href="/zines/vol-1"
-                                className={isActive('/zines/vol-1') ? 'underline block px-4 py-2' : 'block px-4 py-2 hover:bg-gray-100'}
+                                href="/poems"
+                                className={pathname.startsWith('/poems') ? 'underline' : 'hover:underline'}
                             >
-                                Vol. 1
+                                Poems
                             </Link>
-                        </li>
-                    </ul>
-                </li>
+                        </div>
 
-                <li>
-                    <Link
-                        href="/contact"
-                        className={isActive('/contact') ? 'underline' : 'hover:underline'}
-                    >
-                        Contact
-                    </Link>
-                </li>
+                    </li>
 
-                <li>
-                    <Link
-                        href="/about"
-                        className={isActive('/about') ? 'underline' : 'hover:underline'}
-                    >
-                        About
-                    </Link>
-                </li>
+                    <li>
+                        <Link
+                            href="/contact"
+                            className={isActive('/contact') ? 'underline' : 'hover:underline'}
+                        >
+                            Contact
+                        </Link>
+                    </li>
 
-                <li>
-                    <a
-                        href="https://www.instagram.com/deptforddoggerels/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Instagram"
-                        className="hover:text-pink-600 transition-colors"
-                    >
-                        <FaInstagram size={20} />
-                    </a>
-                </li>
-            </ul>
-        </nav>
+                    <li>
+                        <Link
+                            href="/about"
+                            className={isActive('/about') ? 'underline' : 'hover:underline'}
+                        >
+                            About
+                        </Link>
+                    </li>
+
+                    <li>
+                        <a
+                            href="https://www.instagram.com/deptforddoggerels/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Instagram"
+                            className="hover:text-pink-600 transition-colors"
+                        >
+                            <FaInstagram size={20} />
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
     );
 }
