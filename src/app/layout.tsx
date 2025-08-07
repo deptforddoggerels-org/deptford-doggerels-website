@@ -33,7 +33,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
-        <footer className="text-center py-4">
+        <footer className="text-center py-4 bg-parchment-light bg-[url('/noise.png')]">
           <footer className="text-center py-4 text-sm text-gray-600">
             
             <div>

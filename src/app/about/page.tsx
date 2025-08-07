@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function AboutPage() {
     return (
-        <main className="px-12 pt-20 pb-4">
+        <main className="px-12 pt-24 pb-4 bg-parchment-light bg-[url('/noise.png')]">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
 
 

@@ -14,6 +14,11 @@
   --font-lora: var(--font-lora);
 }
 
+@theme {
+  --color-parchment-light: #fdf6ec; 
+  --color-parchment-warm: #1c1c1c; 
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;

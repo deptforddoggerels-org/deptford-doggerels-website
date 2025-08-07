@@ -24,7 +24,7 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="max-w-xl mx-auto p-6 space-y-4 bg-white border shadow-md rounded-md"
+      className="max-w-xl mx-auto p-6 space-y-4  border shadow-md rounded-md bg-parchment-light bg-[url('/noise.png')]"
     >
       <h2 className="text-4xl font-bold  mb-2 font-pirata">Contact Us</h2>
       <p>
@@ -47,7 +47,7 @@ export default function ContactForm() {
           required
           value={formData.name}
           onChange={handleChange}
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-black focus:border-black p-2"
+          className="mt-1 block w-full rounded-md bg-white border-gray-300 shadow-sm focus:ring-black focus:border-black p-2"
         />
       </div>
 
@@ -62,7 +62,7 @@ export default function ContactForm() {
           required
           value={formData.email}
           onChange={handleChange}
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-black focus:border-black p-2"
+          className="mt-1 block w-full rounded-md bg-white border-gray-300 shadow-sm focus:ring-black focus:border-black p-2"
         />
       </div>
 
@@ -77,7 +77,7 @@ export default function ContactForm() {
           required
           value={formData.message}
           onChange={handleChange}
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-black focus:border-black p-2"
+          className="mt-1 block w-full rounded-md bg-white border-gray-300 shadow-sm focus:ring-black focus:border-black p-2"
         />
       </div>
 

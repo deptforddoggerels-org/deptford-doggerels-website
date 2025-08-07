@@ -10,7 +10,7 @@ export default function SignupPanel() {
       {/* Floating Sign Up Button */}
       <button
         onClick={() => setOpen(true)}
-        className="fixed bottom-6 right-6 z-50 bg-black font-pirata text-white px-4 py-2 rounded-full drop-shadow-lg hover:bg-gray-800 transition"
+        className="fixed bottom-6 right-6 z-40 bg-black font-pirata text-white px-4 py-2 rounded-full drop-shadow-lg hover:bg-gray-800 transition cursor-pointer"
       >
         Newsletter Signup
       </button>
@@ -18,7 +18,7 @@ export default function SignupPanel() {
       {/* Overlay and Panel */}
       {open && (
         <div
-          className="fixed inset-0 z-40 flex"
+          className="fixed inset-0 z-50 flex"
           aria-modal="true"
           role="dialog"
         >
@@ -29,14 +29,14 @@ export default function SignupPanel() {
           />
 
           {/* Slide-in panel */}
-          <div className="relative ml-auto w-full max-w-md bg-white shadow-lg h-full z-50 animate-slide-in">
+          <div className="relative ml-auto w-full max-w-md bg-white shadow-lg h-full z-80 animate-slide-in">
             <div className="p-6 h-full flex flex-col justify-between">
               <div>
                 {/* Close Button */}
-                <div className="flex justify-end">
+                <div className="flex justify-end ">
                   <button
                     onClick={() => setOpen(false)}
-                    className="text-gray-500 hover:text-black text-2xl"
+                    className="text-gray-500 hover:text-black text-2xl cursor-pointer"
                     aria-label="Close sign up panel"
                   >
                     &times;
