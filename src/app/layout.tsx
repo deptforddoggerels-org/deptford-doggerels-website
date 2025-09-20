@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/NavBar";
 import SignupModal from "@/components/SignupModal";
 import { ModalProvider } from "@/components/ModalProvider"
+import ClientOnly from "@/components/ClientOnly";
 
 const pirataOne = Pirata_One({
   variable: "--font-pirata-one",
@@ -30,22 +31,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${pirataOne.variable} ${lora.variable} antialiased font-lora`}>
         <Navbar />
-        <ModalProvider>
-          {children}
-          <footer className="text-center py-4 bg-parchment-light bg-[url('/noise.png')]">
-            <div>
-              Contact:{" "}
-              <a
-                href="mailto:deptforddoggerels@gmail.com"
-                className="underline hover:text-black"
-              >
-                deptforddoggerels@gmail.com
-              </a>
-            </div>
-            <div className="font-pirata">ALL RIGHTS RESERVED © 2025</div>
-          </footer>
-          <SignupModal />
-        </ModalProvider>
+        <ClientOnly>
+          <ModalProvider>
+            {children}
+            <SignupModal />
+          </ModalProvider>
+        </ClientOnly>
       </body>
     </html>
   );
