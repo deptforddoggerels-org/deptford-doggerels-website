@@ -1,8 +1,12 @@
+"use client";
 import ParallaxSection from "@/components/ParallaxSection";
 import GalleryTeaser from "@/components/GalleryTeaser";
 import Image from "next/image";
+import { useModal } from "@/components/ModalProvider";
+
 
 export default function Home() {
+  const { setOpen } = useModal();
   return (
     <div>
       <main className="flex flex-col row-start-2 items-center">
@@ -50,7 +54,7 @@ export default function Home() {
 
         {/* Call to Action with Parallax */}
         <ParallaxSection
-          src="/images/gallery/16-untitled--11.jpg"
+          src="/images/gallery/crowd.jpg"
           alt="Call to Action"
           height="min-h-[50vh]"
         >
@@ -65,16 +69,16 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <a
                 href="/contact"
-                className="bg-white text-black border border-black px-6 py-3 rounded hover:bg-gray-100 transition text-center font-pirata"
+                className="bg-white text-black border border-black px-6 py-3 rounded hover:bg-gray-200 transition text-center font-pirata"
               >
                 Contact Us
               </a>
-              <a
-                href="#newsletter"
-                className="bg-black text-white border border-white px-6 py-3 rounded hover:bg-gray-800 transition text-center font-pirata"
+              <button
+                onClick={() => setOpen(true)}
+                className="bg-black text-white border border-white px-6 py-3 rounded hover:bg-gray-800 transition text-center font-pirata cursor-pointer"
               >
                 Join the Mailing List
-              </a>
+              </button>
             </div>
           </div>
         </ParallaxSection>
