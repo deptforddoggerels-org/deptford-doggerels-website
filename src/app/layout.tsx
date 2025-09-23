@@ -38,7 +38,7 @@ export default function RootLayout({
               <div>
                 Contact:{" "}
                 <a
-                  href="mailto:deptforddoggerels@gmail.com"
+                  href="mailto:info@deptforddoggerels.com"
                   className="underline hover:text-black"
                 >
                   info@deptforddoggerels.com
