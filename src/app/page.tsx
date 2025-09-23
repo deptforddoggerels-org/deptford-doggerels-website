@@ -19,7 +19,7 @@ export default function Home() {
         {/* Who We Are */}
         <section className="relative w-full bg-parchment-light bg-[url('/noise.png')] bg-blend-multiply px-6 md:px-32 py-20 shadow-lg">
           <div className="mx-auto flex flex-col md:flex-row gap-12 items-center">
-            <div className="md:w-1/2 text-center md:text-left">
+            <div className="text-black md:w-1/2 text-center md:text-left">
               <h2 className="font-pirata text-2xl md:text-4xl mb-4">
                 Who We Are
               </h2>

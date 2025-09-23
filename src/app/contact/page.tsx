@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function ContactPage() {
   return (
-    <main className="px-6 md:px-32 pt-24 pb-16 bg-parchment-light bg-[url('/noise.png')] bg-blend-multiply min-h-screen">
+    <main className="px-6 md:px-32 pt-24 pb-16 bg-parchment-light bg-[url('/noise.png')] bg-blend-multiply min-h-screen text-black">
       <div className="mx-auto flex flex-col md:flex-row items-center gap-12">
 
         {/* Left Side: Contact Info + Form */}
