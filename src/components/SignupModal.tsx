@@ -1,6 +1,7 @@
 "use client";
 
 import { useModal } from "@/components/ModalProvider";
+import NewsletterForm from "./NewsletterForm";
 
 export default function SignupModal() {
   const { open, setOpen } = useModal();
@@ -38,6 +39,8 @@ export default function SignupModal() {
               <h2 className="text-2xl font-bold mb-4 font-pirata">Join the Mailing List</h2>
               <p className="mb-4">Sign up to receive news and updates.</p>
 
+              <NewsletterForm />
+              {/** 
               <form className="space-y-4">
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700">
                   Email address
@@ -55,6 +58,8 @@ export default function SignupModal() {
                   Sign up
                 </button>
               </form>
+              */}
+
 
               <p className="text-xs text-gray-400 text-center mt-6">
                 You can unsubscribe at any time.

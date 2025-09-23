@@ -34,6 +34,18 @@ export default function RootLayout({
         <ClientOnly>
           <ModalProvider>
             {children}
+            <footer className="text-center py-4 bg-parchment-light bg-[url('/noise.png')]">
+              <div>
+                Contact:{" "}
+                <a
+                  href="mailto:deptforddoggerels@gmail.com"
+                  className="underline hover:text-black"
+                >
+                  info@deptforddoggerels.com
+                </a>
+              </div>
+              <div className="font-pirata">ALL RIGHTS RESERVED © 2025</div>
+            </footer>
             <SignupModal />
           </ModalProvider>
         </ClientOnly>

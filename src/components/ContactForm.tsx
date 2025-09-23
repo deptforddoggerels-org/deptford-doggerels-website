@@ -20,14 +20,28 @@ export default function ContactForm() {
     e.preventDefault();
     setSubmitting(true);
 
-    // TODO: replace with email service / API
-    console.log(formData);
-    await new Promise((resolve) => setTimeout(resolve, 800));
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
 
-    alert('Message sent!');
-    setFormData({ name: '', email: '', message: '' });
-    setSubmitting(false);
+      const data = await res.json();
+
+      if (res.ok) {
+        alert("Message sent!");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        alert(data.error || "Something went wrong.");
+      }
+    } catch (err) {
+      alert("Failed to send. Please try again later.");
+    } finally {
+      setSubmitting(false);
+    }
   };
+
 
   return (
     <form
