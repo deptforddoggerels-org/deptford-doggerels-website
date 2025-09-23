@@ -12,7 +12,7 @@ export default function Home() {
       <main className="flex flex-col row-start-2 items-center">
 
         {/* Hero with Parallax */}
-        <ParallaxSection src="/images/gallery/2-untitled-2.jpg" alt="Deptford Arches">
+        <ParallaxSection src="/images/gallery/2-untitled-2.jpg">
           <h1 className="text-4xl md:text-6xl font-pirata">Deptford Doggerels</h1>
         </ParallaxSection>
 
@@ -55,7 +55,6 @@ export default function Home() {
         {/* Call to Action with Parallax */}
         <ParallaxSection
           src="/images/gallery/crowd.jpg"
-          alt="Call to Action"
           height="min-h-[50vh]"
         >
           <div className="bg-black/40 p-6 rounded-lg text-center">

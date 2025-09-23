@@ -2,7 +2,6 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { notFound } from 'next/navigation';
-import { JSX } from 'react';
 
 type PoemData = {
   title: string;
@@ -12,15 +11,14 @@ type PoemData = {
   date: string;
 };
 
-interface PageProps {
-  params: {
-    poemSlug: string;
-  };
-}
-
-// You can keep it async, but use `Promise<JSX.Element>` as return type
-export default async function PoemPage({ params }: PageProps): Promise<JSX.Element> {
-  const { poemSlug } = params;
+// Async page function: inline params type directly
+export default async function PoemPage({
+  params,
+}: {
+  params: Promise<{ poemSlug: string }>;
+}) {
+  // await params first
+  const { poemSlug } = await params;
   const poem = await getPoem(poemSlug);
 
   if (!poem) return notFound();
@@ -37,6 +35,7 @@ export default async function PoemPage({ params }: PageProps): Promise<JSX.Eleme
     </main>
   );
 }
+
 
 async function getPoem(slug: string): Promise<PoemData | null> {
   try {
