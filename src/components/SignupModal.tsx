@@ -36,8 +36,8 @@ export default function SignupModal() {
               </div>
 
               {/* Content */}
-              <h2 className="text-2xl font-bold mb-4 font-pirata">Join the Mailing List</h2>
-              <p className="mb-4">Sign up to receive news and updates.</p>
+              <h2 className="text-2xl font-bold mb-4 font-pirata text-black">Join the Mailing List</h2>
+              <p className="mb-4 text-black">Sign up to receive news and updates.</p>
 
               <NewsletterForm />
               {/** 
