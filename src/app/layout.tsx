@@ -35,7 +35,7 @@ export default function RootLayout({
           <ModalProvider>
             {children}
             <footer className="text-center py-4 bg-parchment-light bg-[url('/noise.png')]">
-              <div>
+              <div className="text-black">
                 Contact:{" "}
                 <a
                   href="mailto:info@deptforddoggerels.com"

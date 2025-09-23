@@ -17,7 +17,7 @@ type PoemMetadata = {
 export default function PoemsPage() {
     const poems = getPoems(); // call sync helper
     return (
-        <main className="px-12 pt-20 pb-4 bg-parchment-light bg-[url('/noise.png')]">
+        <main className="px-12 pt-20 pb-4 bg-parchment-light bg-[url('/noise.png')] text-black">
             <section className="pt-20 px-4 max-w-5xl mx-auto">
                 <h1 className="text-4xl font-pirata mb-8">Poems</h1>
                 <div className="grid md:grid-cols-2 gap-8">

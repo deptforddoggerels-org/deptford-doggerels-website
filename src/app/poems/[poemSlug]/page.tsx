@@ -24,7 +24,7 @@ export default async function PoemPage({
   if (!poem) return notFound();
 
   return (
-    <main className="px-6 pt-24 pb-8 w-full mx-auto bg-parchment-light bg-[url('/noise.png')]">
+    <main className="px-6 pt-24 pb-8 w-full mx-auto bg-parchment-light bg-[url('/noise.png')] text-black">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-4xl font-pirata mb-4">{poem.title}</h1>
         <h5>by {poem.author}</h5>

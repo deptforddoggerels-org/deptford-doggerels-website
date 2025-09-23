@@ -57,7 +57,7 @@ export default function Home() {
           src="/images/gallery/crowd.jpg"
           height="min-h-[50vh]"
         >
-          <div className="bg-black/40 p-6 rounded-lg text-center">
+          <div className="bg-black/40 p-6 rounded-lg text-center text-white">
             <h2 className="font-pirata text-2xl md:text-4xl mb-4">Want To Get Involved?</h2>
             <p>
               Interested in showcasing your work? Looking to hear some poetry?
