@@ -23,7 +23,7 @@ export default function Navbar() {
             {/* Actual navbar */}
             <nav className="fixed top-0 left-0 w-full z-30 font-pirata p-4 flex items-center justify-between px-6 md:px-12 bg-transparent text-white">
                 {/* Logo */}
-                <Link href="/" className="flex items-center gap-2 z-40">
+                <Link href="/" onClick={() => setIsOpen(false)} className="flex items-center gap-2 z-40">
                     <Image
                         src="/DoggerelsIconBW.webp"
                         alt="Site Icon"
