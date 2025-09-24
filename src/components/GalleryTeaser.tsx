@@ -15,7 +15,7 @@ const galleryImages = [
 
 export default function GalleryTeaser() {
   return (
-    <section className="bg-parchment-light py-16 px-12 md:px-32 w-full h-[75vh] bg-[url('/noise.png')] text-black">
+    <section className="bg-parchment-light py-16 px-12 md:px-32 w-full h-[40vh] md:h-[75vh] bg-[url('/noise.png')] text-black">
       <div className="w-full mx-auto h-full flex flex-col md:flex-row items-center gap-8">
 
         {/* Left: Text Content */}
