@@ -27,9 +27,13 @@ export default function Home() {
                 A local lair for folks to showcase their words with people that
                 will listen, putting artists and their work front and center.
                 <br /><br />
-                Held on the <b>first Thursday of every month at 7:00 PM</b>
+                Held on the <b>first Thursday of every month.</b>
                 <br />
-                at:
+                <b>Doors at 7:00 PM.</b>
+                <br />
+                <b>Speakers at 8:00 PM sharp.</b>
+                <br />
+                Find us at:
                 <a
                   href="https://maps.app.goo.gl/pZEqYdEcNN5xwkeB8"
                   target="_blank"
@@ -43,7 +47,7 @@ export default function Home() {
 
             <div className="hidden md:block md:w-1/2 relative aspect-[4/3] rounded-lg overflow-hidden shadow-md">
               <Image
-                src="/images/gallery/14-untitled-4272.jpg"
+                src="/images/gallery/15-106-DSC01313.jpg"
                 alt="Description"
                 fill
                 className="object-cover"
