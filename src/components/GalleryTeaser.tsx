@@ -6,14 +6,21 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
-const galleryImages = [
-  '/images/gallery/1-untitled-.jpg',
-  '/images/gallery/2-untitled-2.jpg',
-  '/images/gallery/3-untitled-4216.jpg',
-];
 
 export default function GalleryTeaser() {
+
+  const [galleryImages, setGalleryImages] = useState<string[]>([]);
+
+  useEffect(() => {
+    fetch('/api/gallery')
+      .then(res => res.json())
+      .then(setGalleryImages);
+  }, []);
+
+  if (!galleryImages.length) return <p>Loading gallery...</p>;
+
   return (
     <section className="bg-parchment-light py-16 px-12 md:px-32 w-full h-[40vh] md:h-[75vh] bg-[url('/noise.png')] text-black">
       <div className="w-full mx-auto h-full flex flex-col md:flex-row items-center gap-8">
