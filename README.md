@@ -47,3 +47,14 @@ CONTACT_EMAIL_USER=...
 CONTACT_EMAIL_PASS=...
 CONTACT_EMAIL_RECEIVER=...
 ```
+
+
+## TODO
+- ~~Mobile dropdown menu options should be clickable~~
+- About and Contact pages should use gallery swipe.
+- Make as much as possible server components (esp. gallery swipte)
+- Fix breakpoints for contact and about for larger screens.
+- Fix About us copy.
+- Fix colours (BG and text came out weird on Derv's IPhone).
+- Final run through check of newsletter and contact page.
+- Compile *all* login info

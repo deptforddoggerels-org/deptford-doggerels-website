@@ -93,16 +93,16 @@ export default function Navbar() {
                 {/* Mobile Menu */}
                 {isOpen && (
                     <div className="absolute top-0 left-0 w-full h-screen bg-black/90 flex flex-col items-center justify-center gap-8 text-2xl md:hidden z-30">
-                        <Link href="/gallery" onClick={() => setIsOpen(false)}>Gallery</Link>
-                        <Link href="/poems" onClick={() => setIsOpen(false)}>Poems</Link>
-                        <Link href="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
-                        <Link href="/about" onClick={() => setIsOpen(false)}>About</Link>
+                        <Link className='cursor-pointer' href="/gallery" onClick={() => setIsOpen(false)}>Gallery</Link>
+                        <Link className='cursor-pointer' href="/poems" onClick={() => setIsOpen(false)}>Poems</Link>
+                        <Link className='cursor-pointer' href="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
+                        <Link className='cursor-pointer' href="/about" onClick={() => setIsOpen(false)}>About</Link>
                         <a
                             href="https://www.instagram.com/deptforddoggerels/"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Instagram"
-                            className="hover:text-pink-600 transition-colors"
+                            className="hover:text-pink-600 transition-colors cursor-pointer"
                             onClick={() => setIsOpen(false)}
                         >
                             <FaInstagram size={28} />
