@@ -1,34 +1,29 @@
-import Image from "next/image";
-
+// components/ParallaxSection.tsx
 export default function ParallaxSection({
   src,
   children,
-  height = "min-h-screen",
-  priority = false,
+  height = "min-h-screen", // default, can pass e.g. "h-[60vh]" or "min-h-[70vh]"
 }: {
   src: string;
   children?: React.ReactNode;
   height?: string;
-  priority?: boolean;
 }) {
   return (
     <section
       className={`relative w-full ${height} overflow-hidden flex items-center justify-center`}
     >
-      {/* Optimised background image */}
-      <Image
-        src={src}
-        alt=""
-        fill
-        priority={priority}
-        sizes="100vw"
-        className="object-cover will-change-transform scale-110"
+      {/* Decorative background (uses CSS background so bg-fixed works for parallax) */}
+      <div
+        className="absolute inset-0 bg-fixed bg-center bg-cover"
+        style={{ backgroundImage: `url(${src})` }}
+        aria-hidden="true"
       />
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/30 pointer-events-none" />
+      {/* Overlay to keep text readable */}
+      <div className="absolute inset-0 bg-black/30 pointer-events-none" aria-hidden="true" />
 
-      {/* Content */}
+      {/* Content container — centered by the section's flexbox.
+          Use flex-col to stack multiple children, and px for horizontal padding. */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center text-white px-6">
         {children}
       </div>

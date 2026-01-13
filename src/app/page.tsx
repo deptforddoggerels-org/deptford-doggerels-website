@@ -4,16 +4,17 @@ import ParallaxSection from "@/components/ParallaxSection";
 import GalleryTeaser from "@/components/GalleryTeaser";
 import Image from "next/image";
 import JoinMailingListCTA from "@/components/CTASection";
+import HeroSection from "@/components/HeroSection";
 
 export default function Home() {
   return (
     <main className="flex flex-col row-start-2 items-center">
 
-      <ParallaxSection src="/images/gallery/2-untitled-2.jpg">
+      <HeroSection src="/images/gallery/2-untitled-2.jpg">
         <h1 className="text-4xl md:text-6xl font-pirata">
           Deptford Doggerels
         </h1>
-      </ParallaxSection>
+      </HeroSection>
 
       {/* Who We Are */}
       <section className="relative w-full bg-parchment-light bg-[url('/noise.png')] bg-blend-multiply px-6 md:px-32 py-20 shadow-lg">
