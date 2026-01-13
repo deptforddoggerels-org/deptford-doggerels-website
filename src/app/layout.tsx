@@ -29,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${pirataOne.variable} ${lora.variable} antialiased font-lora`}>
+      <body className={`${pirataOne.variable} ${lora.variable} antialiased font-lora text-black bg-parchment-light bg-[url('/noise.png')]`}>
         <Navbar />
         <ClientOnly>
           <ModalProvider>

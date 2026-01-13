@@ -55,6 +55,6 @@ CONTACT_EMAIL_RECEIVER=...
 - ~~Make as much as possible server components (esp. gallery swipe)~~
 - Fix breakpoints for contact and about for larger screens.
 - ~~Fix About us copy.~~
-- Fix colours (BG and text came out weird on Derv's IPhone).
+- ~~Fix colours (BG and text came out weird on Derv's IPhone).~~
 - Final run through check of newsletter and contact page.
 - Compile *all* login info
