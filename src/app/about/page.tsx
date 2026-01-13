@@ -94,7 +94,7 @@ export default function AboutPage() {
           <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-lg overflow-hidden shadow-lg">
             <Image
               src="/images/gallery/26-untitled--19.webp" // You can swap for another poster or event photo
-              alt="Deptford Doggerels Poster"
+              alt="Deptford Doggerels speaker performing"
               fill
               className="object-cover"
             />

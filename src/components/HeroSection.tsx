@@ -7,7 +7,7 @@ export default function HeroSection({ src, children }: { src: string; children?:
       <div className="fixed inset-0 -z-10">
         <Image
           src={src}
-          alt=""
+          alt="Hero Background - A crowd at Deptford Doggerels poetry night"
           fill
           priority
           sizes="100vw"

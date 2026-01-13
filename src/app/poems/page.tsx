@@ -35,7 +35,7 @@ export default function PoemsPage() {
                             <div className="overflow-hidden rounded shadow">
                                 <Image
                                     src={poem.image}
-                                    alt={poem.title}
+                                    alt={`Image for ${poem.title}`}
                                     width={800}
                                     height={400}
                                     className="group-hover:scale-105 transition-transform duration-300 object-cover"

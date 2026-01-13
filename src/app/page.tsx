@@ -44,7 +44,7 @@ export default function Home() {
           <div className="hidden md:block md:w-1/2 relative aspect-[4/3] rounded-lg overflow-hidden shadow-md">
             <Image
               src="/images/gallery/15-106-DSC01313.webp"
-              alt=""
+              alt="Two speakers performing at Deptford Doggerels"
               fill
               sizes="(min-width: 768px) 50vw, 100vw"
               className="object-cover"

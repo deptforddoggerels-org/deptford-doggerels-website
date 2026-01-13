@@ -21,7 +21,7 @@ export default function GalleryPage() {
             <FadeImage
               key={img}
               src={`/images/gallery/${img}`}
-              alt={img}
+              alt={`Gallery Image ${img}`}
               className="break-inside-avoid rounded mb-6 shadow hover:shadow-lg transition-shadow duration-300"
             />
           ))}
