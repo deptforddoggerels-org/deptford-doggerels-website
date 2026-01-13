@@ -3,10 +3,6 @@
 import { useState } from 'react';
 import Image from 'next/image';
 
-type FadeImageProps = {
-  src: string;
-  alt: string;
-};
 
 export function FadeImage({ src, alt, className }: { src: string; alt: string; className?: string }) {
   const [loaded, setLoaded] = useState(false);
