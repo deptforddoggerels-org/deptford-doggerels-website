@@ -3,6 +3,9 @@ import path from 'path';
 import matter from 'gray-matter';
 import Link from 'next/link';
 import Image from 'next/image';
+import { Metadata } from 'next';
+
+
 
 type PoemMetadata = {
   title: string;
@@ -12,6 +15,12 @@ type PoemMetadata = {
   date: string
 };
 
+
+export const metadata: Metadata = {
+  title: "Poems",
+  description:
+    "A collection of poems featured at Deptford Doggerels poetry and spoken word nights in London.",
+};
 
 
 export default function PoemsPage() {

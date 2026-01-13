@@ -1,5 +1,13 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "Frequently Asked Questions about Deptford Doggerels poetry and spoken word night in Deptford, London.",
+};
+
 
 export default function AboutPage() {
   return (

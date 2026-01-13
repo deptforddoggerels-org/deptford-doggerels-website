@@ -18,9 +18,43 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  title: "Deptford Doggerels",
-  description: "Community poetry night in the heart of Deptford",
+  metadataBase: new URL("https://deptforddoggerels.com"),
+  title: {
+    default: "Deptford Doggerels | Poetry & Spoken Word in Deptford",
+    template: "%s | Deptford Doggerels",
+  },
+  description:
+    "Deptford Doggerels is a monthly poetry and spoken word night in Deptford, London.",
+  keywords: [
+    "Deptford poetry",
+    "London poetry night",
+    "spoken word London",
+    "open mic Deptford",
+    "poetry events London",
+  ],
+  openGraph: {
+    title: "Deptford Doggerels",
+    description:
+      "A monthly poetry and spoken word night in Deptford, London.",
+    url: "https://deptforddoggerels.com",
+    siteName: "Deptford Doggerels",
+    images: [
+      {
+        url: "/images/openGraph/opengraph-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Deptford Doggerels poetry night",
+      },
+    ],
+    locale: "en_GB",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
+
 
 export default function RootLayout({
   children,
