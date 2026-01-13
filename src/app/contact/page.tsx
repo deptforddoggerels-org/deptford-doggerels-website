@@ -1,13 +1,33 @@
 import ContactForm from "@/components/ContactForm";
-import Image from "next/image";
 
 export default function ContactPage() {
   return (
     <main className="px-6 md:px-32 pt-24 pb-16 bg-parchment-light bg-[url('/noise.png')] bg-blend-multiply min-h-screen text-black">
       <div className="mx-auto flex flex-col md:flex-row items-center gap-12">
 
+        
+
         {/* Left Side: Contact Info + Form */}
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2 space-y-4">
+          <h2 className="text-4xl md:text-5xl font-pirata mb-2">Who We Are</h2>
+          <p className="text-lg md:text-xl font-lora leading-relaxed">
+            Put simply, we're creating a space we want to be a part of in the community we love. We want to find local people with the same inkling.
+          </p>
+          <p className="text-lg md:text-xl font-lora leading-relaxed">
+            There’s not enough poetry nights in Deptford, until now.
+          </p>
+          <p className="text-lg md:text-xl font-lora leading-relaxed">
+            Find us at:{" "}
+            <a
+              href="https://maps.app.goo.gl/pZEqYdEcNN5xwkeB8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-black"
+            >
+              Aaja Basement, Comet Pl, London SE8 4EP
+            </a>
+          </p>
+
           <h1 className="font-pirata text-3xl md:text-5xl mb-6 text-center md:text-left">
             Get In Touch
           </h1>
@@ -16,23 +36,16 @@ export default function ContactPage() {
             We are open to submissions of all kinds of poetry and spoken word.
             <br/>
             <br/>
-            Fill out the form below and we’ll get back to you soon.
+            Fill out the form and we’ll get back to you soon.
           </p>
 
-          <div className=" backdrop-blur-sm shadow-lg rounded-xl border border-gray-700">
-            <ContactForm />
-          </div>
+          
         </div>
 
         {/* Right Side: Visual */}
         <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-          <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-lg overflow-hidden shadow-lg">
-            <Image
-              src="/images/gallery/crowd.jpg" // Suggest a crowd / poetry night image
-              alt="Deptford Doggerels event"
-              fill
-              className="object-cover"
-            />
+          <div className="w-full backdrop-blur-sm shadow-lg rounded-xl border border-gray-700">
+            <ContactForm />
           </div>
         </div>
       </div>
