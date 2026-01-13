@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className="flex flex-col row-start-2 items-center">
 
-      <HeroSection src="/images/gallery/2-untitled-2.jpg">
+      <HeroSection src="/images/gallery/2-untitled-2.webp">
         <h1 className="text-4xl md:text-6xl font-pirata">
           Deptford Doggerels
         </h1>
@@ -43,7 +43,7 @@ export default function Home() {
 
           <div className="hidden md:block md:w-1/2 relative aspect-[4/3] rounded-lg overflow-hidden shadow-md">
             <Image
-              src="/images/gallery/15-106-DSC01313.jpg"
+              src="/images/gallery/15-106-DSC01313.webp"
               alt=""
               fill
               sizes="(min-width: 768px) 50vw, 100vw"
@@ -53,7 +53,7 @@ export default function Home() {
         </div>
       </section>
 
-      <ParallaxSection src="/images/gallery/crowd.jpg" height="min-h-[50vh]">
+      <ParallaxSection src="/images/gallery/crowd.webp" height="min-h-[50vh]">
         <JoinMailingListCTA />
       </ParallaxSection>
 
