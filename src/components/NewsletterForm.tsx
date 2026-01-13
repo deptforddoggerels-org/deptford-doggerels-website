@@ -44,7 +44,7 @@ export default function NewsletterForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
-      <label htmlFor="email" className="block text-sm font-medium text-slate-700">
+      <label htmlFor="email" className="block text-sm font-medium text-gray-700">
         Email address
       </label>
       <input
