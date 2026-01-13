@@ -2,13 +2,13 @@ import ContactForm from "@/components/ContactForm";
 
 export default function ContactPage() {
   return (
-    <main className="px-6 md:px-32 pt-24 pb-16 bg-parchment-light bg-[url('/noise.png')] bg-blend-multiply min-h-screen text-black">
-      <div className="mx-auto flex flex-col md:flex-row items-center gap-12">
+    <main className="px-6 lg:px-32 pt-24 pb-16 bg-parchment-light bg-[url('/noise.png')] bg-blend-multiply min-h-screen text-black">
+      <div className="mx-auto flex flex-col lg:flex-row items-center gap-12">
 
         
 
         {/* Left Side: Contact Info + Form */}
-        <div className="w-full md:w-1/2 space-y-4">
+        <div className="w-full lg:w-1/2 space-y-4">
           <h2 className="text-4xl md:text-5xl font-pirata mb-2">Who We Are</h2>
           <p className="text-lg md:text-xl font-lora leading-relaxed">
             Put simply, we're creating a space we want to be a part of in the community we love. We want to find local people with the same inkling.
@@ -43,7 +43,7 @@ export default function ContactPage() {
         </div>
 
         {/* Right Side: Visual */}
-        <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+        <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
           <div className="w-full backdrop-blur-sm shadow-lg rounded-xl border border-gray-700">
             <ContactForm />
           </div>
