@@ -3,6 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/about",
+  },
   title: "About",
   description:
     "Frequently Asked Questions about Deptford Doggerels poetry and spoken word night in Deptford, London.",
