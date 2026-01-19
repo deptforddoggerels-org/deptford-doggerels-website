@@ -2,6 +2,9 @@ import ContactForm from "@/components/ContactForm";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/contact",
+  },
   title: "Contact",
   description:
     "Get in touch with Deptford Doggerels for inquiries, performances, or just to say hi!",
