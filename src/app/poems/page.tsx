@@ -17,6 +17,9 @@ type PoemMetadata = {
 
 
 export const metadata: Metadata = {
+    alternates: {
+    canonical: "/poems",
+  },
   title: "Poems",
   description:
     "A collection of poems featured at Deptford Doggerels poetry and spoken word nights in London.",

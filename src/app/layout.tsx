@@ -19,6 +19,9 @@ const lora = Lora({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://deptforddoggerels.com"),
+  alternates: {
+    canonical: "/",
+  },
   title: {
     default: "Deptford Doggerels | Poetry & Spoken Word in Deptford",
     template: "%s | Deptford Doggerels",

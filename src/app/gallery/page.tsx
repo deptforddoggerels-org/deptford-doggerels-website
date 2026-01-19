@@ -4,6 +4,9 @@ import { FadeImage } from '@/components/FadeImage';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/gallery",
+  },
   title: "Gallery",
   description:
     "Photos from Deptford Doggerels poetry and spoken word events in London.",
