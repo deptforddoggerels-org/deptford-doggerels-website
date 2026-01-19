@@ -6,7 +6,8 @@ export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    message: ''
+    message: '',
+    company: '', // hidden field for spam prevention
   });
   const [submitting, setSubmitting] = useState(false);
 
@@ -31,7 +32,7 @@ export default function ContactForm() {
 
       if (res.ok) {
         alert("Message sent!");
-        setFormData({ name: "", email: "", message: "" });
+        setFormData({ name: "", email: "", message: "", company: "" });
       } else {
         alert(data.error || "Something went wrong.");
       }
@@ -86,6 +87,17 @@ export default function ContactForm() {
           onChange={handleChange}
           className="mt-1 block w-full rounded-md bg-white border border-gray-300 shadow-sm focus:ring-2 focus:ring-black focus:border-black p-3"
           placeholder="you@example.com"
+        />
+        <input
+          type="text"
+          name="company"
+          id="company"
+          value={formData.company}
+          onChange={handleChange}
+          className="mt-1 w-full rounded-md bg-white border border-gray-300 shadow-sm focus:ring-2 focus:ring-black focus:border-black p-3 hidden"
+          tabIndex={-1}
+          placeholder="Company"
+          autoComplete="off"
         />
       </div>
 
